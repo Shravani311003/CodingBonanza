@@ -30,7 +30,7 @@ def correct_positions(word, guess):
 def print_word(guess, word, correct_letters, correct_positions):
     for i in range(len(guess)):
         if guess[i] in correct_letters and guess[i] not in correct_positions.values():
-            print("Correct position: ", guess[i])
+            print("Correct letter: ", guess[i])
             try:
                 correct_letters.remove(guess[i])
             except:
